@@ -40,10 +40,7 @@ namespace Backer.Web.Controllers
                     return Ok(ResponseProvider.GetRespone(ResponseState.Failed, "نام کاربری وارد شده نامعتبر می باشد"));
                 }
 
-                // IMPORTANT: In a real application, NEVER store or compare plaintext passwords.
-                // Always hash and salt the password (e.g., using BCrypt) and then compare.
-                var hashPassword = _tokenService.HashPassword(model.Password);
-                if (user.Password != hashPassword)
+                if (!_tokenService.VerifyPassword(model.Password, user.Password))
                 {
                     // Invalid credentials; return an Unauthorized result.
                     return Ok(ResponseProvider.GetRespone(ResponseState.Failed, "رمز عبور وارد شده نامعتبر می باشد"));
