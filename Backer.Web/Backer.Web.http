@@ -1,0 +1,6 @@
+@Backer.Web_HostAddress = http://localhost:5048
+
+GET {{Backer.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
