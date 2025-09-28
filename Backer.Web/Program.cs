@@ -1,10 +1,12 @@
 using Backer.Application;
 using Backer.Core.Interfaces;
 using Backer.Infrastructure;
+using Backer.Infrastructure.Data;
 using Backer.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.EntityFrameworkCore;
 
 using System.Text;
 
@@ -56,6 +58,12 @@ builder.Services.AddAuthentication(options =>
 #endregion JWT
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    dbContext.Database.Migrate();
+}
 
 if (app.Environment.IsDevelopment())
 {
