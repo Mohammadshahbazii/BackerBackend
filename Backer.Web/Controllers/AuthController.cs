@@ -58,9 +58,7 @@ namespace Backer.Web.Controllers
             }
             catch (Exception)
             {
-                // return Ok(ResponseProvider.GetRespone(ResponseState.Failed));
-                var token = _tokenService.GenerateToken(model.Username);
-                return Ok(new { success = true, token });
+                 return Ok(ResponseProvider.GetRespone(ResponseState.Failed));
 
             }
         }
