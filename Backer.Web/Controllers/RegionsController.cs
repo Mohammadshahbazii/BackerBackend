@@ -70,7 +70,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a Region
-        [HttpPut("Update/{id}")]
+        [HttpPost("Update/{id}")]
         public async Task<ActionResult> Update(int id, UpdateRegionDto dto)
         {
             try
@@ -90,7 +90,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a Region
-        [HttpDelete("Delete/{id}")]
+        [HttpPost("Delete/{id}")]
         public async Task<ActionResult> Delete(int id)
         {
             try

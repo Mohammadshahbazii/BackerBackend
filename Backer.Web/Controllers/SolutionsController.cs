@@ -61,7 +61,7 @@ public class SolutionsController : ControllerBase
         }
     }
 
-    [HttpPut("Update/{id}")]
+    [HttpPost("Update/{id}")]
     public async Task<ActionResult> Update(int id, UpdateSolutionDto dto)
     {
         try
@@ -80,7 +80,7 @@ public class SolutionsController : ControllerBase
         }
     }
 
-    [HttpDelete("Delete/{id}")]
+    [HttpPost("Delete/{id}")]
     public async Task<ActionResult> Delete(int id)
     {
         try

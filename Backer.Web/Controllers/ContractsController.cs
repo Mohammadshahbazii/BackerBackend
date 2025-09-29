@@ -73,7 +73,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a ContractPackage
-        [HttpPut("UpdatePackage/{id}")]
+        [HttpPost("UpdatePackage/{id}")]
         public async Task<ActionResult> UpdatePackage(int id, UpdateContractPackageDto dto)
         {
             try
@@ -93,7 +93,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a ContractPackage
-        [HttpDelete("DeletePackage/{id}")]
+        [HttpPost("DeletePackage/{id}")]
         public async Task<ActionResult> DeletePackage(int id)
         {
             try
@@ -159,7 +159,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a ContractType
-        [HttpPut("UpdateType/{id}")]
+        [HttpPost("UpdateType/{id}")]
         public async Task<ActionResult> UpdateType(int id, UpdateContractTypeDto dto)
         {
             try
@@ -179,7 +179,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a ContractType
-        [HttpDelete("DeleteType/{id}")]
+        [HttpPost("DeleteType/{id}")]
         public async Task<ActionResult> DeleteType(int id)
         {
             try

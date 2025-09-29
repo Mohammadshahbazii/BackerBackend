@@ -25,6 +25,12 @@ namespace Backer.Web.Controllers
             _configuration = configuration;
         }
 
+        [HttpGet("Test")]
+        public IActionResult Test() 
+        {
+            return Ok("test is ok");
+        }
+
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestModel model)
         {

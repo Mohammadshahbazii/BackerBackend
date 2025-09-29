@@ -65,7 +65,7 @@ namespace Backer.Web.Controllers
             }
         }
 
-        [HttpPut("Update/{id}")]
+        [HttpPost("Update/{id}")]
         public async Task<ActionResult> Update(int id, [FromBody] UpdateDifficultGroupDto dto)
         {
             try
@@ -82,7 +82,7 @@ namespace Backer.Web.Controllers
             }
         }
 
-        [HttpDelete("Delete/{id}")]
+        [HttpPost("Delete/{id}")]
         public async Task<ActionResult> Delete(int id)
         {
             try

@@ -53,7 +53,7 @@ public class JobTitlesController : ControllerBase
     }
 
     // Update a JobTitle
-    [HttpPut("Update/{id}")]
+    [HttpPost("Update/{id}")]
     public async Task<ActionResult> Update(int id, UpdateJobTitleDto dto)
     {
         try
@@ -73,7 +73,7 @@ public class JobTitlesController : ControllerBase
     }
 
     // Delete a JobTitle
-    [HttpDelete("Delete/{id}")]
+    [HttpPost("Delete/{id}")]
     public async Task<ActionResult> Delete(int id)
     {
         try

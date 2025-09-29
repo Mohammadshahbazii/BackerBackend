@@ -81,7 +81,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a Hardware
-        [HttpPut("Update/{id}")]
+        [HttpPost("Update/{id}")]
         public async Task<ActionResult> Update(int id, UpdateHardwareDto dto)
         {
             try
@@ -101,7 +101,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a Hardware
-        [HttpDelete("Delete/{id}")]
+        [HttpPost("Delete/{id}")]
         public async Task<ActionResult> Delete(int id)
         {
             try
@@ -168,7 +168,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a Hardware
-        [HttpPut("UpdateCartReader/{id}")]
+        [HttpPost("UpdateCartReader/{id}")]
         public async Task<ActionResult> UpdateCartReader(int id, UpdateHardwareCartReaderDto dto)
         {
             try
@@ -188,7 +188,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a Hardware
-        [HttpDelete("DeleteCartReader/{id}")]
+        [HttpPost("DeleteCartReader/{id}")]
         public async Task<ActionResult> DeleteCartReader(int id)
         {
             try
@@ -256,7 +256,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a Hardware
-        [HttpPut("UpdateConnection/{id}")]
+        [HttpPost("UpdateConnection/{id}")]
         public async Task<ActionResult> UpdateConnection(int id, UpdateHardwareConnectionDto dto)
         {
             try
@@ -276,7 +276,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a Hardware
-        [HttpDelete("DeleteConnection/{id}")]
+        [HttpPost("DeleteConnection/{id}")]
         public async Task<ActionResult> DeleteConnection(int id)
         {
             try
@@ -344,7 +344,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a Hardware
-        [HttpPut("UpdatePortal/{id}")]
+        [HttpPost("UpdatePortal/{id}")]
         public async Task<ActionResult> UpdatePortal(int id, UpdateHardwarePortalDto dto)
         {
             try
@@ -364,7 +364,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a Hardware
-        [HttpDelete("DeletePortal/{id}")]
+        [HttpPost("DeletePortal/{id}")]
         public async Task<ActionResult> DeletePortal(int id)
         {
             try
@@ -432,7 +432,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a Hardware
-        [HttpPut("UpdateChange/{id}")]
+        [HttpPost("UpdateChange/{id}")]
         public async Task<ActionResult> UpdateChange(int id, UpdateHardwareChangeDto dto)
         {
             try
@@ -452,7 +452,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a Hardware
-        [HttpDelete("DeleteChange/{id}")]
+        [HttpPost("DeleteChange/{id}")]
         public async Task<ActionResult> DeleteChange(int id)
         {
             try
@@ -520,7 +520,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a Hardware
-        [HttpPut("UpdateRepair/{id}")]
+        [HttpPost("UpdateRepair/{id}")]
         public async Task<ActionResult> UpdateRepair(int id, UpdateHardwareRepairDto dto)
         {
             try
@@ -540,7 +540,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a Hardware
-        [HttpDelete("DeleteRepair/{id}")]
+        [HttpPost("DeleteRepair/{id}")]
         public async Task<ActionResult> DeleteRepair(int id)
         {
             try
@@ -608,7 +608,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a Hardware
-        [HttpPut("UpdateReplace/{id}")]
+        [HttpPost("UpdateReplace/{id}")]
         public async Task<ActionResult> UpdateReplace(int id, UpdateHardwareReplaceDto dto)
         {
             try
@@ -628,7 +628,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a Hardware
-        [HttpDelete("DeleteReplace/{id}")]
+        [HttpPost("DeleteReplace/{id}")]
         public async Task<ActionResult> DeleteReplace(int id)
         {
             try

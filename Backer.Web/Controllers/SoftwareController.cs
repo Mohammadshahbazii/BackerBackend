@@ -74,7 +74,7 @@ namespace Backer.Web.Controllers
         }
 
 
-        [HttpPut("UpdateSoftware/{id}")]
+        [HttpPost("UpdateSoftware/{id}")]
         public async Task<ActionResult> UpdateSoftware(int id, UpdateSoftwareDto dto)
         {
             try
@@ -93,7 +93,7 @@ namespace Backer.Web.Controllers
             }
         }
 
-        [HttpDelete("DeleteSoftware/{id}")]
+        [HttpPost("DeleteSoftware/{id}")]
         public async Task<ActionResult> DeleteSoftware(int id)
         {
             try
@@ -159,7 +159,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a AnswerPoll
-        [HttpPut("UpdateVersion/{id}")]
+        [HttpPost("UpdateVersion/{id}")]
         public async Task<ActionResult> UpdateVersion(int id, UpdateSoftwareVersionDto dto)
         {
             try
@@ -178,7 +178,7 @@ namespace Backer.Web.Controllers
             }
         }
 
-        [HttpDelete("DeleteVersion/{id}")]
+        [HttpPost("DeleteVersion/{id}")]
         public async Task<ActionResult> DeleteVersion(int id)
         {
             try

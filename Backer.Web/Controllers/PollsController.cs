@@ -73,7 +73,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a AskPoll
-        [HttpPut("UpdateAsk/{id}")]
+        [HttpPost("UpdateAsk/{id}")]
         public async Task<ActionResult> UpdateAsk(int id, UpdateAskPollDto dto)
         {
             try
@@ -93,7 +93,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a AskPoll
-        [HttpDelete("DeleteAsk/{id}")]
+        [HttpPost("DeleteAsk/{id}")]
         public async Task<ActionResult> DeleteAsk(int id)
         {
             try
@@ -159,7 +159,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a AnswerPoll
-        [HttpPut("UpdateAnswer/{id}")]
+        [HttpPost("UpdateAnswer/{id}")]
         public async Task<ActionResult> UpdateAnswer(int id, UpdateAnswerPollDto dto)
         {
             try
@@ -179,7 +179,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a AnswerPoll
-        [HttpDelete("DeleteAnswer/{id}")]
+        [HttpPost("DeleteAnswer/{id}")]
         public async Task<ActionResult> DeleteAnswer(int id)
         {
             try
@@ -245,7 +245,7 @@ namespace Backer.Web.Controllers
         }
 
         // Update a SamplePoll
-        [HttpPut("UpdateSample/{id}")]
+        [HttpPost("UpdateSample/{id}")]
         public async Task<ActionResult> UpdateSample(int id, UpdatePollSampleDto dto)
         {
             try
@@ -265,7 +265,7 @@ namespace Backer.Web.Controllers
         }
 
         // Delete a SamplePoll
-        [HttpDelete("DeleteSample/{id}")]
+        [HttpPost("DeleteSample/{id}")]
         public async Task<ActionResult> DeleteSample(int id)
         {
             try
